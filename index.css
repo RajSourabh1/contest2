@@ -1,0 +1,76 @@
+html{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    padding: 20px;
+}
+nav{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.container{
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+.card-container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 25%;
+}
+.profile-img{
+    width: 40%;
+}
+.card{
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.item{
+    padding: 20px;
+    border: 1px solid gray;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+}
+.profile{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-card > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+.bottom-card img{
+    width: 30px;
+    height: 30px;
+}
+table{
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+thead{
+    border: 1px solid gray;
+}
+td{
+    /* border: 1px solid gray; */
+    padding: 10px;
+}
+thead td{
+    border-bottom: 1px solid gray;
+}
