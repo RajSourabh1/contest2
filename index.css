@@ -17,17 +17,17 @@ nav{
 }
 .container{
     display: flex;
-    margin: 30px;
+    margin-top: 30px;
     gap: 20px;
 }
 .card-container{
     display: flex;
     flex-flow: column wrap;
     gap: 20px;
-    width: 25%;
-}
+}    
 .profile-img{
-    width: 40%;
+    width: 100px;
+    margin-bottom: 25px;
 }
 .card{
     padding: 30px;
@@ -40,6 +40,7 @@ nav{
     flex-grow: 1;
     display: flex;
     flex-flow: column wrap;
+    border-radius: 10px;
 }
 .profile{
     display: flex;
@@ -47,15 +48,22 @@ nav{
     align-items: center;
     justify-content: center;
 }
+ul{
+    font-weight: 200;
+}
 .bottom-card > div{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     gap: 10px;
+    padding: 5px;
 }
 .bottom-card img{
     width: 30px;
     height: 30px;
+}
+.bottom-card p{
+    padding: 5px;
 }
 table{
     border: 1px solid gray;
@@ -63,14 +71,50 @@ table{
     margin-top: 20px;
     flex-grow: 1;
     border-radius: 10px;
+    border-spacing: 0;
 }
 thead{
     border: 1px solid gray;
 }
 td{
-    /* border: 1px solid gray; */
     padding: 10px;
+    border-right: 1px solid gray;
+}
+table td:nth-child(3){
+    border-right: none;
 }
 thead td{
     border-bottom: 1px solid gray;
+}
+input{
+    display: none;
+}
+label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: black; */
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+input:checked + label{
+    background-color: white;
+}
+li{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+tr td:nth-child(1), tr td:nth-child(2){
+   width: 30px;
+   text-align: center;
+}
+.git{
+    padding-bottom: 0px;
+}
+
+@media (max-width:700px){
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
 }
